@@ -1,0 +1,57 @@
+baseurl = "https://example.com/"
+title = "Darraghmc.com"
+theme = "pulp"
+canonifyurls = true
+hasCJKLanguage = true
+
+[markup.goldmark.renderer]
+    unsafe = true # Allow user HTML tags
+
+[params]
+    author = "Darragh McCarthy"
+    avatar = "profile.jpeg"
+    avatarDescription = "My face, my beautiful face"
+    favicon = "favicon.ico"
+    description = """
+        Passionate developer.<br>
+        Jiu Jitsu lover. <br>
+        Coffee fanatic. 
+    """
+    publicationYear = "2019"
+    # listPageDateFormat = "January, 2006" # See https://gohugo.io/functions/format/
+    # singlePageDateFormat = "January 2, 2006"
+    # custom_css = ["/css/custom.css"]
+    # custom_js = ["/js/custom.js"]
+
+# Make sure setting a following option for search bar to work
+[outputs]
+    section = ["JSON", "HTML"]
+    taxonomy = ["JSON", "HTML"]
+
+[[menu.main]]
+    identifier = "LinkedIn"
+    # name = "LinkedIn"
+    pre = "<i class='fab fa-linkedin fa-lg'></i>"
+    url = "https://www.linkedin.com/in/darragh-mccarthy-27846783/"
+    weight = 20
+
+[[menu.main]]
+    identifier = "github"
+    # name = "GitHub"
+    pre = "<i class='fab fa-github fa-lg'></i>"
+    url = "https://github.com/DarraghMcC"
+    weight = 20
+
+[[menu.main]]
+    identifier = "email"
+    # name = "Email"
+    pre = "<i class='fa fa-envelope fa-lg'></i>"
+    url = "mailto:darraghm.mccarthy@gmail.com"
+    weight = 30
+
+[[menu.main]]
+    identifier = "instagram"
+    # name = "Instagram"
+    pre = "<i class='fab fa-instagram fa-lg'></i>"
+    url = "https://www.instagram.com/darraghmcc/"
+    weight = 40
