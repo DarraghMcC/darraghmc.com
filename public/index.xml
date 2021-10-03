@@ -4,10 +4,16 @@
     <title>Darraghmc.com</title>
     <link>https://www.darraghmc.com/</link>
     <description>Recent content on Darraghmc.com</description>
-    <generator>Hugo -- gohugo.io</generator>
-    
-	<atom:link href="https://www.darraghmc.com/index.xml" rel="self" type="application/rss+xml" />
-    
+    <generator>Hugo -- gohugo.io</generator><atom:link href="https://www.darraghmc.com/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title></title>
+      <link>https://www.darraghmc.com/manager-readme/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.darraghmc.com/manager-readme/</guid>
+      <description>Hi, I&amp;rsquo;m Darragh! Interacting with people can be complex and as a subset of people, this is also true of managers. To try somewhat help with this complexity the following is my humble attempt at capturing some context and details about myself as a manager and a person.
+This is intended to be an aid for those I work with and is not required reading - this is not a replacement for building a working relationship together.</description>
+    </item>
     
   </channel>
 </rss>
