@@ -26,7 +26,6 @@ hasCJKLanguage = true
 # Make sure setting a following option for search bar to work
 [outputs]
     section = ["JSON", "HTML"]
-    taxonomy = ["JSON", "HTML"]
 
 [[menu.main]]
     identifier = "LinkedIn"
