@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <title>
+      
+           - Darraghmc.com
+      
+  </title>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="author" content="Darragh McCarthy" />
+  <link rel="shortcut icon" type="image/x-icon" href="https://www.darraghmc.com/img/favicon.ico">
+
+  
+  
+  
+  
+  
+  <link rel="stylesheet" href="https://www.darraghmc.com/style.min.39acacc5d2051426f655a6b7fbf4786fbd0fd8fffd09322c9b497ef0f7439b3f.css" integrity="sha256-OaysxdIFFCb2Vaa3&#43;/R4b70P2P/9CTIsm0l&#43;8PdDmz8=">
+  
+  
+  
+  <link rel="stylesheet" href="https://www.darraghmc.com/style-dark.min.0a647fb6c07e04b77b54fa0515d0a683d39ecdb251dba960fe1f966f7ff36fc2.css" media="(prefers-color-scheme: dark)" integrity="sha256-CmR/tsB&#43;BLd7VPoFFdCmg9OezbJR26lg/h&#43;Wb3/zb8I=">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+
+  
+  
+
+  <meta property="og:title" content="" />
+<meta property="og:description" content="This site A few details on the construction of this website. I&rsquo;ve no doubt that some security flaw is going to make me being so open about all this, but such is the price I pay for being open and nice!
+As someone who tries hard to avoid over-engineering solutions in a professional environment, I evidently scratch that itch with my personal projects and this website is a stellar example of this." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://www.darraghmc.com/this.site/" /><meta property="article:section" content="" />
+
+
+
+<meta itemprop="name" content="">
+<meta itemprop="description" content="This site A few details on the construction of this website. I&rsquo;ve no doubt that some security flaw is going to make me being so open about all this, but such is the price I pay for being open and nice!
+As someone who tries hard to avoid over-engineering solutions in a professional environment, I evidently scratch that itch with my personal projects and this website is a stellar example of this.">
+
+<meta itemprop="wordCount" content="230">
+<meta itemprop="keywords" content="" /><meta name="twitter:card" content="summary"/>
+<meta name="twitter:image" content="https://www.darraghmc.com/img/profile.jpeg"/>
+<meta name="twitter:title" content=""/>
+<meta name="twitter:description" content="This site A few details on the construction of this website. I&rsquo;ve no doubt that some security flaw is going to make me being so open about all this, but such is the price I pay for being open and nice!
+As someone who tries hard to avoid over-engineering solutions in a professional environment, I evidently scratch that itch with my personal projects and this website is a stellar example of this."/>
+
+  <!--[if lte IE 9]>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
+  <![endif]-->
+
+  <!--[if lt IE 9]>
+  <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
+  <![endif]-->
+
+  </head>
+
+  <body>
+    
+  <h1></h1>
+  <header>
+  
+  <div class="avatar">
+    <img class="avatarMask" src="https://www.darraghmc.com/img/profile.jpeg" alt="My face, my beautiful face">
+    <a href="https://www.darraghmc.com"><img class="avatar-border" src="https://www.darraghmc.com/img/avatar-border.svg" alt=""></a>
+  </div>
+  
+  <h2><a class="author" href="https://www.darraghmc.com">Darragh McCarthy</a></h2>
+</header>
+
+  
+  
+  
+  
+  <div id="contentBody">
+    <h2 id="this-site"><strong>This site</strong></h2>
+<p>A few details on the construction of this website. I&rsquo;ve no doubt that some security flaw is going to make me being so open about all this, but such is the price I pay for being open and nice!</p>
+<p>As someone who tries hard to avoid over-engineering solutions in a professional environment, I evidently scratch that itch with my personal projects and this website is a stellar example of this.
+As you you have probably seen from the landing page, this side is pretty basic. Under the hood it&rsquo;s running a nifty Golang app called <a href="https://gohugo.io/">Hugo</a>. Hugo is pretty neat and simple. My Huge repo for this side can be found <a href="https://github.com/DarraghMcC/darraghmc.com">here</a>.</p>
+<p>The infrastructure itself is probably where things go overboard. Everything is done through <a href="https://www.terraform.io/">Terraform</a>. The site itself is a cloudfront distribution backed by an s3 bucket and relevant route53 A records.</p>
+<p>Emails to the website domain are done using a neat <a href="https://github.com/cloudposse/terraform-aws-ses-lambda-forwarder">cloudposse module</a> which creates an email forwarder using a combination of AWS SES and Lambda running the aws-lambda-ses-forwarder NPM module.</p>
+<p>All of the code for this site is stored <a href="https://github.com/DarraghMcC/site-deploy">here</a>.</p>
+<p>The terraform state for all of this is stored in an s3 bucket. The infrastructure for creating this s3 bucket is also created through my terraform repo <a href="https://github.com/DarraghMcC/tf-states">here</a>. Where things get really meta is this repo has its state set up in the same way&hellip;</p>
+
+  </div>
+  <footer>
+  <p>
+  &copy; 2019 Darragh McCarthy.
+  Powered by <a href="https://gohugo.io/">Hugo</a>
+  using the <a href="https://github.com/koirand/pulp/">pulp</a> theme.
+  </p>
+</footer>
+
+
+  </body>
+</html>
