@@ -28,23 +28,23 @@
   
 
   <meta property="og:title" content="" />
-<meta property="og:description" content="This site A few details on the construction of this website. I&rsquo;ve no doubt that some security flaw is going to make me being so open about all this, but such is the price I pay for being open and nice!
-As someone who tries hard to avoid over-engineering solutions in a professional environment, I evidently scratch that itch with my personal projects and this website is a stellar example of this." />
+<meta property="og:description" content="This site A few details on the construction of this website. I&rsquo;ve no doubt that some security flaw is going to make me regret being so transparent, but such is the price I pay for being so open!
+As someone who tries hard to avoid over-engineering solutions in a professional environment, I evidently scratch that itch with my personal projects and this website is a stellar example of this. As you have probably seen from the landing page, the site structure is pretty basic." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://www.darraghmc.com/this.site/" /><meta property="article:section" content="" />
 
 
 
 <meta itemprop="name" content="">
-<meta itemprop="description" content="This site A few details on the construction of this website. I&rsquo;ve no doubt that some security flaw is going to make me being so open about all this, but such is the price I pay for being open and nice!
-As someone who tries hard to avoid over-engineering solutions in a professional environment, I evidently scratch that itch with my personal projects and this website is a stellar example of this.">
+<meta itemprop="description" content="This site A few details on the construction of this website. I&rsquo;ve no doubt that some security flaw is going to make me regret being so transparent, but such is the price I pay for being so open!
+As someone who tries hard to avoid over-engineering solutions in a professional environment, I evidently scratch that itch with my personal projects and this website is a stellar example of this. As you have probably seen from the landing page, the site structure is pretty basic.">
 
-<meta itemprop="wordCount" content="230">
+<meta itemprop="wordCount" content="245">
 <meta itemprop="keywords" content="" /><meta name="twitter:card" content="summary"/>
-<meta name="twitter:image" content="https://www.darraghmc.com/img/profile.jpeg"/>
+<meta name="twitter:image" content="https://www.darraghmc.com//img/profile.jpeg"/>
 <meta name="twitter:title" content=""/>
-<meta name="twitter:description" content="This site A few details on the construction of this website. I&rsquo;ve no doubt that some security flaw is going to make me being so open about all this, but such is the price I pay for being open and nice!
-As someone who tries hard to avoid over-engineering solutions in a professional environment, I evidently scratch that itch with my personal projects and this website is a stellar example of this."/>
+<meta name="twitter:description" content="This site A few details on the construction of this website. I&rsquo;ve no doubt that some security flaw is going to make me regret being so transparent, but such is the price I pay for being so open!
+As someone who tries hard to avoid over-engineering solutions in a professional environment, I evidently scratch that itch with my personal projects and this website is a stellar example of this. As you have probably seen from the landing page, the site structure is pretty basic."/>
 
   <!--[if lte IE 9]>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
@@ -65,11 +65,11 @@ As someone who tries hard to avoid over-engineering solutions in a professional 
   <header>
   
   <div class="avatar">
-    <img class="avatarMask" src="https://www.darraghmc.com/img/profile.jpeg" alt="My face, my beautiful face">
-    <a href="https://www.darraghmc.com"><img class="avatar-border" src="https://www.darraghmc.com/img/avatar-border.svg" alt=""></a>
+    <img class="avatarMask" src="https://www.darraghmc.com//img/profile.jpeg" alt="My face, my beautiful face">
+    <a href="https://www.darraghmc.com/"><img class="avatar-border" src="https://www.darraghmc.com//img/avatar-border.svg" alt=""></a>
   </div>
   
-  <h2><a class="author" href="https://www.darraghmc.com">Darragh McCarthy</a></h2>
+  <h2><a class="author" href="https://www.darraghmc.com/">Darragh McCarthy</a></h2>
 </header>
 
   
@@ -78,13 +78,13 @@ As someone who tries hard to avoid over-engineering solutions in a professional 
   
   <div id="contentBody">
     <h2 id="this-site"><strong>This site</strong></h2>
-<p>A few details on the construction of this website. I&rsquo;ve no doubt that some security flaw is going to make me being so open about all this, but such is the price I pay for being open and nice!</p>
+<p>A few details on the construction of this website. I&rsquo;ve no doubt that some security flaw is going to make me regret being so transparent, but such is the price I pay for being so open!</p>
 <p>As someone who tries hard to avoid over-engineering solutions in a professional environment, I evidently scratch that itch with my personal projects and this website is a stellar example of this.
-As you you have probably seen from the landing page, this side is pretty basic. Under the hood it&rsquo;s running a nifty Golang app called <a href="https://gohugo.io/">Hugo</a>. Hugo is pretty neat and simple. My Huge repo for this side can be found <a href="https://github.com/DarraghMcC/darraghmc.com">here</a>.</p>
+As you have probably seen from the landing page, the site structure is pretty basic. Under the hood it&rsquo;s running a nifty Golang app called <a href="https://gohugo.io/">Hugo</a>. Hugo itself is neat and simple and it being Golang has little bearing to how it is used (much to my disappointment). My Hugo repo for this site can be found <a href="https://github.com/DarraghMcC/darraghmc.com">here</a>.</p>
 <p>The infrastructure itself is probably where things go overboard. Everything is done through <a href="https://www.terraform.io/">Terraform</a>. The site itself is a cloudfront distribution backed by an s3 bucket and relevant route53 A records.</p>
 <p>Emails to the website domain are done using a neat <a href="https://github.com/cloudposse/terraform-aws-ses-lambda-forwarder">cloudposse module</a> which creates an email forwarder using a combination of AWS SES and Lambda running the aws-lambda-ses-forwarder NPM module.</p>
 <p>All of the code for this site is stored <a href="https://github.com/DarraghMcC/site-deploy">here</a>.</p>
-<p>The terraform state for all of this is stored in an s3 bucket. The infrastructure for creating this s3 bucket is also created through my terraform repo <a href="https://github.com/DarraghMcC/tf-states">here</a>. Where things get really meta is this repo has its state set up in the same way&hellip;</p>
+<p>The terraform state for all of this is stored in an s3 bucket. The infrastructure for creating this s3 bucket is also created through my terraform repo <a href="https://github.com/DarraghMcC/tf-states">here</a>. Where things get really meta is the state repo has its own state set up in the same way&hellip;</p>
 
   </div>
   <footer>

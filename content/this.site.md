@@ -1,11 +1,11 @@
 
 ## **This site**
 
-A few details on the construction of this website. I've no doubt that some security flaw is going to make me regret being so transparent, but such is the price I pay for being openness! 
+A few details on the construction of this website. I've no doubt that some security flaw is going to make me regret being so transparent, but such is the price I pay for being so open! 
 
 
 As someone who tries hard to avoid over-engineering solutions in a professional environment, I evidently scratch that itch with my personal projects and this website is a stellar example of this. 
-As you you have probably seen from the landing page, the site structure is pretty basic. Under the hood it's running a nifty Golang app called [Hugo](https://gohugo.io/). Hugo itself is neat and simple and it being Golang has little bearing to how it is used (much to my disappointment). My Hugo repo for this side can be found [here](https://github.com/DarraghMcC/darraghmc.com).
+As you have probably seen from the landing page, the site structure is pretty basic. Under the hood it's running a nifty Golang app called [Hugo](https://gohugo.io/). Hugo itself is neat and simple and it being Golang has little bearing to how it is used (much to my disappointment). My Hugo repo for this site can be found [here](https://github.com/DarraghMcC/darraghmc.com).
 
 The infrastructure itself is probably where things go overboard. Everything is done through [Terraform](https://www.terraform.io/). The site itself is a cloudfront distribution backed by an s3 bucket and relevant route53 A records. 
 
